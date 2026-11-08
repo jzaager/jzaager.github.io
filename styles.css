@@ -1,0 +1,295 @@
+:root {
+  --bg: #fbfaf8;
+  --text: #1b1b1b;
+  --muted: #6a6a66;
+  --line: #e6e3dd;
+  --accent: #2f4f4a;
+  --card: #ffffff;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #131413;
+    --text: #ecebe7;
+    --muted: #9a9a94;
+    --line: #2a2b29;
+    --accent: #8fb8b0;
+    --card: #1a1b1a;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.site-header,
+main,
+.site-footer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.wordmark {
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.site-header nav a {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.site-header nav a:hover {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.hero {
+  padding: 72px 0 56px;
+}
+
+.eyebrow {
+  margin: 0 0 20px;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+h1 {
+  margin: 0 0 24px;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(32px, 6vw, 46px);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.lede {
+  margin: 0 0 32px;
+  font-size: 18px;
+  color: var(--muted);
+  max-width: 60ch;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: var(--bg);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.button:hover {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.button.ghost {
+  background: transparent;
+  color: var(--accent);
+}
+
+section {
+  padding: 48px 0;
+  border-top: 1px solid var(--line);
+}
+
+.hero {
+  border-top: none;
+}
+
+h2 {
+  margin: 0 0 28px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.card-head,
+.role-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.card-head a,
+.note,
+.dates {
+  font-size: 14px;
+}
+
+.note,
+.dates {
+  color: var(--muted);
+}
+
+.sub {
+  margin: 4px 0 14px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.card p,
+.role p {
+  margin: 0 0 12px;
+}
+
+.card ul {
+  margin: 0 0 14px;
+  padding-left: 20px;
+}
+
+.card li {
+  margin-bottom: 6px;
+}
+
+.card li::marker {
+  color: var(--muted);
+}
+
+.tags {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.role {
+  margin-bottom: 28px;
+}
+
+.role:last-child {
+  margin-bottom: 0;
+}
+
+.role .sub {
+  margin-bottom: 8px;
+}
+
+.skills {
+  margin: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.skills div {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 12px;
+}
+
+.skills dt {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.skills dd {
+  margin: 0;
+}
+
+#about p,
+#contact p {
+  max-width: 62ch;
+  margin: 0 0 16px;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+
+.site-footer {
+  padding-top: 32px;
+  padding-bottom: 48px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 560px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .hero {
+    padding-top: 40px;
+  }
+
+  .skills div {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}

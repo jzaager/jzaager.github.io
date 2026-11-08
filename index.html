@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Justin Zaager | Full-Stack Engineer</title>
+  <meta name="description" content="Justin Zaager is a full-stack engineer who builds software that makes stressful systems easier for real people to navigate.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top">Justin Zaager</a>
+    <nav aria-label="Primary">
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Full-stack engineer &middot; New York</p>
+      <h1>Software that makes stressful systems easier for real people to navigate.</h1>
+      <p class="lede">
+        I'm a full-stack engineer with a B.S. in Software Engineering and seven years of
+        experience untangling messy, time-sensitive workflows in a law firm. I build
+        internal tools, and I'm looking for my next role writing code full time.
+      </p>
+      <div class="actions">
+        <a class="button" href="#contact">Get in touch</a>
+        <a class="button ghost" href="https://github.com/jzaager" target="_blank" rel="noopener">GitHub</a>
+        <a class="button ghost" href="https://www.linkedin.com/in/justin-zaager-70a28917a/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Selected work</h2>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Nutri</h3>
+          <a href="https://github.com/jzaager/nutri" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </div>
+        <p class="sub">Grocery price tracker and recipe manager</p>
+        <p>
+          A full-stack app for tracking grocery prices and managing recipes. Users can compare
+          what a recipe needs against what's on their list, and missing ingredients are added
+          to their shopping list automatically.
+        </p>
+        <ul>
+          <li>Built on SvelteKit and Supabase (PostgreSQL), containerized with Docker and deployed to Cloudflare.</li>
+          <li>Row Level Security and JWT-based auth through Supabase ensure users only see and change their own data.</li>
+          <li>Server-side pagination in the data ingestion pipeline keeps large product catalogs fast and light on memory.</li>
+          <li>Normalized relational schema with many-to-many ingredient relationships and quantity tracking.</li>
+        </ul>
+        <p class="tags">SvelteKit &middot; TypeScript &middot; Supabase &middot; PostgreSQL &middot; Docker</p>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Dismissal Document Generator</h3>
+          <span class="note">Internal tool &middot; source private</span>
+        </div>
+        <p class="sub">Built for a six-attorney litigation team</p>
+        <p>
+          A React and TypeScript app that generates dismissal documents from structured input,
+          replacing a copy-and-paste workflow that was slow and error-prone.
+        </p>
+        <ul>
+          <li>Cut dismissal drafting time by 25%.</li>
+          <li>Eliminated repetitive copy-paste errors across the team's caseload.</li>
+        </ul>
+        <p class="tags">React &middot; TypeScript</p>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Firm Process Documentation Site</h3>
+          <span class="note">Internal tool &middot; source private</span>
+        </div>
+        <p class="sub">Onboarding for new hires</p>
+        <p>
+          A static site that documents the firm's processes in one searchable place, designed
+          so new hires can get productive without constant hand-holding.
+        </p>
+        <ul>
+          <li>Reduced new-hire training time from two weeks to three days.</li>
+        </ul>
+        <p class="tags">HTML &middot; CSS &middot; JavaScript</p>
+      </article>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <div class="role">
+        <div class="role-head">
+          <h3>Technical Paralegal</h3>
+          <span class="dates">Oct 2019 &ndash; Present</span>
+        </div>
+        <p class="sub">Marin Goodman, LLP &middot; Harrison, NY</p>
+        <p>
+          Handle time-sensitive legal workflows and sensitive client information under strict
+          confidentiality protocols, and build the internal tools that make that work faster
+          and less error-prone.
+        </p>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <h3>Front-End Software Engineering Virtual Experience</h3>
+          <span class="dates">Sept 2026</span>
+        </div>
+        <p class="sub">Skyscanner &middot; via Forage</p>
+        <p>
+          Job simulation in which I built a travel date picker in React using Skyscanner's
+          open-source Backpack library, then customized the app and ran automated tests to
+          confirm it rendered correctly.
+        </p>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <h3>B.S. in Software Engineering</h3>
+          <span class="dates">Sept 2024</span>
+        </div>
+        <p class="sub">Western Governors University</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <dl class="skills">
+        <div><dt>Frontend</dt><dd>TypeScript, JavaScript, React, Svelte, HTML, CSS</dd></div>
+        <div><dt>Backend</dt><dd>Go, Node.js, SvelteKit</dd></div>
+        <div><dt>Databases</dt><dd>PostgreSQL, SQL, Supabase</dd></div>
+        <div><dt>Tools</dt><dd>Git, GitHub, Docker, AWS</dd></div>
+      </dl>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I spent years in a law firm watching smart people lose hours to clumsy tools, and
+        eventually started building better ones. That's still what I like most: finding the
+        point where a stressful, high-stakes process breaks down and making it simpler.
+      </p>
+      <p>
+        Before software, I studied filmmaking and worked in screenwriting and video
+        production. Those years taught me how to structure a story, communicate clearly, and
+        keep an audience in mind, and I bring the same habits to interfaces and
+        documentation. I'm still exploring which domains I want to specialize in, and legal
+        tech and other process-heavy fields are high on the list.
+      </p>
+      <!-- Optional: add a line and link here about optioned screenplay, e.g.
+      <p>A screenplay of mine was optioned in 20XX. <a href="ARTICLE_URL">Read the coverage.</a></p>
+      -->
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        I'm open to full-stack and front-end roles. The best way to reach me is email.
+      </p>
+      <p class="contact-links">
+        <a href="mailto:jzaager@gmail.com">jzaager@gmail.com</a>
+        <a href="https://github.com/jzaager" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/justin-zaager-70a28917a/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; <span id="year">2026</span> Justin Zaager</span>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
